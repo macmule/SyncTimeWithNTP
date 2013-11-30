@@ -12,11 +12,11 @@
 # HARDCODED VALUES ARE SET HERE
 
 # FQDN of NTP
-NTPServer="ls-dc-05.pentland.com"
+NTPServer=""
 
 # CHECK TO SEE IF A VALUE WAS PASSED IN PARAMETER 4 AND, IF SO, ASSIGN TO "NTPServer"
 if [ "$4" != "" ] && [ "$NTPServer" == "" ];then
-    niceLogout=$4
+    NTPServer=$4
 fi
 
 ##
